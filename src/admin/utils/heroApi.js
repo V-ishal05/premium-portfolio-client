@@ -1,6 +1,6 @@
 import { getAdminToken } from "./adminAuth";
 
-const BASE_URL = "http://localhost:5000/api/hero";
+const BASE_URL = "http://${API_BASE_URL}/api/hero";
 
 // =========================
 // PUBLIC HERO

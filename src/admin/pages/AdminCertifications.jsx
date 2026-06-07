@@ -47,7 +47,7 @@ function AdminCertifications() {
   const fetchCertifications = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/certifications/admin/all",
+        "http://${API_BASE_URL}/api/certifications/admin/all",
         {
           headers: {
             Authorization: `Bearer ${getAdminToken()}`,
@@ -70,7 +70,7 @@ function AdminCertifications() {
   const fetchStats = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/certifications/stats"
+        "http://${API_BASE_URL}/api/certifications/stats"
       );
 
       const data = await response.json();
@@ -86,7 +86,7 @@ function AdminCertifications() {
   const deleteCertification = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/certifications/admin/${id}`,
+        `http://${API_BASE_URL}/api/certifications/admin/${id}`,
         {
           method: "DELETE",
           headers: {

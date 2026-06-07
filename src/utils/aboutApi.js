@@ -1,7 +1,7 @@
 export const fetchAboutContent = async () => {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/about"
+      "http://${API_BASE_URL}/api/about"
     );
 
     const data = await response.json();

@@ -126,8 +126,8 @@ function ExperienceFormModal({
 
       const url =
         editingExperience
-          ? `http://localhost:5000/api/admin/experience/${editingExperience._id}`
-          : "http://localhost:5000/api/admin/experience";
+          ? `http://${API_BASE_URL}/api/admin/experience/${editingExperience._id}`
+          : "http://${API_BASE_URL}/api/admin/experience";
 
       const method =
         editingExperience

@@ -58,8 +58,8 @@ function CertificationFormModal({
 
     try {
       const url = editingCertification
-        ? `http://localhost:5000/api/certifications/admin/${editingCertification._id}`
-        : "http://localhost:5000/api/certifications/admin/create";
+        ? `http://${API_BASE_URL}/api/certifications/admin/${editingCertification._id}`
+        : "http://${API_BASE_URL}/api/certifications/admin/create";
 
       const method = editingCertification
         ? "PUT"

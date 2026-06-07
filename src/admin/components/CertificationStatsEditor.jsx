@@ -36,7 +36,7 @@ function CertificationStatsEditor({
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/certifications/admin/stats",
+        "http://${API_BASE_URL}/api/certifications/admin/stats",
         {
           method: "PATCH",
           headers: {

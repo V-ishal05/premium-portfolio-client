@@ -18,7 +18,7 @@ function AdminLogin() {
     useState("");
   const [loading, setLoading] = useState(false);
 
-  const API = "http://localhost:5000/api/admin";
+  const API = "http://${API_BASE_URL}/api/admin";
 
   const handleLogin = async (e) => {
     e.preventDefault();

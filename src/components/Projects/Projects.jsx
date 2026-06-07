@@ -13,7 +13,7 @@ function Projects() {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/projects')
+        fetch('http://${API_BASE_URL}/api/projects')
             .then((res) => res.json())
             .then((data) => {
                 if (data.success) {

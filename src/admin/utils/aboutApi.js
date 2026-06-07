@@ -1,7 +1,7 @@
 import { getAdminToken } from "./adminAuth";
 
 const BASE_URL =
-  "http://localhost:5000/api/about";
+  "http://${API_BASE_URL}/api/about";
 
 // =========================
 // PUBLIC ABOUT

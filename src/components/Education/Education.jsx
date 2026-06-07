@@ -26,7 +26,7 @@ function Education() {
     const fetchEducation = async () => {
         try {
             const response = await fetch(
-                'http://localhost:5000/api/education'
+                'http://${API_BASE_URL}/api/education'
             );
 
             const data = await response.json();
@@ -45,7 +45,7 @@ function Education() {
     const fetchHighlights = async () => {
         try {
             const response = await fetch(
-                'http://localhost:5000/api/education/highlights'
+                'http://${API_BASE_URL}/api/education/highlights'
             );
 
             const data = await response.json();

@@ -58,7 +58,7 @@ function AdminEducation() {
   const fetchEducation = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/education/admin/all",
+        "http://${API_BASE_URL}/api/education/admin/all",
         {
           headers: {
             Authorization: `Bearer ${getAdminToken()}`,
@@ -81,7 +81,7 @@ function AdminEducation() {
   const fetchHighlights = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/education/highlights"
+        "http://${API_BASE_URL}/api/education/highlights"
       );
 
       const data = await response.json();
@@ -97,7 +97,7 @@ function AdminEducation() {
   const deleteEducation = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/education/admin/${id}`,
+        `http://${API_BASE_URL}/api/education/admin/${id}`,
         {
           method: "DELETE",
           headers: {
