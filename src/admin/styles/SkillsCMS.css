@@ -1,0 +1,155 @@
+.skills-cms-header {
+  margin-bottom: 30px;
+}
+
+.skills-cms-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.skills-cms-header p {
+  color: #cbd5e1;
+}
+
+.skills-cms-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.skills-cms-card {
+  padding: 28px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 0.95),
+    rgba(15, 23, 42, 0.95)
+  );
+
+  border: 1px solid
+    rgba(148, 163, 184, 0.12);
+}
+
+.skills-cms-card h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.skills-cms-card input,
+.skills-cms-card textarea,
+.skills-cms-card select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+
+  border-radius: 14px;
+
+  border: 1px solid
+    rgba(148, 163, 184, 0.12);
+
+  background: rgba(
+    15,
+    23,
+    42,
+    0.9
+  );
+
+  color: white;
+}
+
+.skills-cms-card textarea {
+  resize: vertical;
+}
+
+.skill-editor,
+.proficiency-editor {
+  padding: 18px;
+  margin-bottom: 18px;
+
+  border-radius: 18px;
+
+  background: rgba(
+    15,
+    23,
+    42,
+    0.55
+  );
+
+  border: 1px solid
+    rgba(148, 163, 184, 0.08);
+}
+
+.delete-skill-btn {
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: rgba(
+    239,
+    68,
+    68,
+    0.2
+  );
+
+  color: white;
+  cursor: pointer;
+}
+
+.add-skill-btn {
+  margin-top: 10px;
+
+  padding: 14px 18px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color: white;
+  cursor: pointer;
+}
+
+.skills-save-row {
+  margin-top: 28px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.skills-save-btn {
+  padding: 16px 28px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.skills-save-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .skills-save-row {
+    justify-content: stretch;
+  }
+
+  .skills-save-btn {
+    width: 100%;
+  }
+}

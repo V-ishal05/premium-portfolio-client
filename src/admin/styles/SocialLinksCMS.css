@@ -1,0 +1,27 @@
+.social-header {
+  margin-bottom: 2rem;
+}
+
+.social-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.social-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.social-card h2 {
+  margin-bottom: 1rem;
+}
+
+.social-card input,
+.social-card textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}

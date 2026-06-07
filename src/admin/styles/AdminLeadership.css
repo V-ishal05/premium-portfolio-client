@@ -1,0 +1,154 @@
+.leadership-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.leadership-header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.leadership-header p {
+  color: #b6bfd3;
+  font-size: 0.95rem;
+}
+
+.leadership-stats-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.lead-stat-card {
+  min-width: 140px;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  text-align: center;
+}
+
+.lead-stat-card span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.lead-stat-card p {
+  margin-top: 0.4rem;
+  color: #b6bfd3;
+  font-size: 0.9rem;
+}
+
+.leadership-preview-card,
+.leadership-empty-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.leadership-preview-top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.leadership-org-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 12px;
+  border-radius: 18px;
+}
+
+.leadership-preview-top h2 {
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.leadership-preview-top p {
+  color: #b6bfd3;
+}
+
+.leadership-preview-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.leadership-preview-meta div {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.leadership-preview-meta span {
+  display: block;
+  color: #9aa7c2;
+  font-size: 0.85rem;
+}
+
+.leadership-preview-meta strong {
+  color: white;
+  font-size: 1.05rem;
+}
+
+.leadership-preview-description {
+  color: #d7dff0;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.leadership-tags-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.leadership-tags-preview span {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.18);
+  color: white;
+  font-size: 0.85rem;
+}
+
+.leadership-empty-card {
+  text-align: center;
+}
+
+.leadership-empty-card h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.leadership-empty-card p {
+  color: #b6bfd3;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  .leadership-header {
+    flex-direction: column;
+  }
+
+  .leadership-stats-grid {
+    flex-wrap: wrap;
+  }
+
+  .leadership-preview-meta {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,89 @@
+.education-form-modal {
+  width: 950px;
+  max-width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #0f172a;
+  border-radius: 26px;
+  padding: 34px;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  animation: modalPop 0.35s ease;
+  position: relative;
+}
+
+.education-form-modal h2 {
+  margin-bottom: 28px;
+  color: white;
+}
+
+.education-form-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.education-form-grid input,
+.education-form-grid textarea,
+.education-form-grid select {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.95);
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.education-form-grid select {
+  cursor: pointer;
+}
+
+.upload-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.upload-group input {
+  padding: 14px;
+}
+
+.toggle-grid {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  color: white;
+  margin-top: 8px;
+}
+
+.toggle-grid label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-education-btn {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.submit-education-btn:hover {
+  transform: translateY(-2px);
+}
+
+.submit-education-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
