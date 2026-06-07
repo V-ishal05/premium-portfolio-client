@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-
+import { useState } from "react";
+import Preloader from "./components/Preloader/Preloader";
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';
 import About from './components/About/About.jsx';
@@ -32,6 +33,16 @@ import AdminAnalytics from "./admin/pages/AdminAnalytics";
 
 
 function HomePage() {
+  const [loading, setLoading] = useState(true);
+
+  if (loading) {
+    return (
+      <Preloader
+        onComplete={() => setLoading(false)}
+      />
+    );
+  }
+
   return (
     <>
       <Navbar />

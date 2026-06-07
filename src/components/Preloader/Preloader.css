@@ -1,0 +1,75 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.preloader-content {
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.preloader-name {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.preloader-role {
+  color: #38bdf8;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.preloader-line {
+  width: 260px;
+  height: 4px;
+  margin: 0 auto 25px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #6366f1,
+    #8b5cf6
+  );
+  animation: loadingBar 2.5s infinite;
+}
+
+.preloader-status {
+  color: #cbd5e1;
+  font-size: 1rem;
+  min-height: 24px;
+}
+
+@keyframes loadingBar {
+  0% {
+    transform: scaleX(0.3);
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0.3);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
