@@ -50,7 +50,7 @@ function AdminExperience() {
       try {
         const response =
           await fetch(
-            "${API_BASE_URL}/api/admin/experience",
+            `${API_BASE_URL}/api/admin/experience`,
             {
               headers: {
                 Authorization: `Bearer ${getAdminToken()}`,

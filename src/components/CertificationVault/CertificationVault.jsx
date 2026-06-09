@@ -50,7 +50,7 @@ function CertificationVault() {
   const fetchCertifications = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/certifications"
+        `${API_BASE_URL}/api/certifications`
       );
 
       const data = await response.json();
@@ -66,7 +66,7 @@ function CertificationVault() {
   const fetchStats = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/certifications/stats"
+        `${API_BASE_URL}/api/certifications/stats`
       );
 
       const data = await response.json();

@@ -26,7 +26,7 @@ function Education() {
     const fetchEducation = async () => {
         try {
             const response = await fetch(
-                '${API_BASE_URL}/api/education'
+                '`${API_BASE_URL}/api/education'
             );
 
             const data = await response.json();
@@ -45,7 +45,7 @@ function Education() {
     const fetchHighlights = async () => {
         try {
             const response = await fetch(
-                '${API_BASE_URL}/api/education/highlights'
+                '`${API_BASE_URL}/api/education/highlights'
             );
 
             const data = await response.json();

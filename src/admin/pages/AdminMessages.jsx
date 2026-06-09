@@ -35,7 +35,7 @@ function AdminMessages() {
   const fetchMessages = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/v1/admin/messages",
+        `${API_BASE_URL}/api/v1/admin/messages`,
         {
           headers: {
             Authorization: `Bearer ${getAdminToken()}`,

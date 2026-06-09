@@ -315,7 +315,7 @@ function LeadershipFormModal({
 
         const response =
           await fetch(
-            "${API_BASE_URL}/api/leadership/admin",
+            `${API_BASE_URL}/api/leadership/admin`,
             {
               method: "PUT",
               headers: {

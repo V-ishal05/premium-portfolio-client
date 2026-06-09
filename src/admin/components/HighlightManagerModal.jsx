@@ -29,7 +29,7 @@ function HighlightManagerModal({
     try {
       const url = editingId
         ? `${API_BASE_URL}/api/education/admin/highlights/${editingId}`
-        : "${API_BASE_URL}/api/education/admin/highlights";
+        : `${API_BASE_URL}/api/education/admin/highlights`;
 
       const method = editingId
         ? "PUT"

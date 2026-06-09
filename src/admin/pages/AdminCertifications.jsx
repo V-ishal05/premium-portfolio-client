@@ -47,7 +47,7 @@ function AdminCertifications() {
   const fetchCertifications = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/certifications/admin/all",
+        `${API_BASE_URL}/api/certifications/admin/all`,
         {
           headers: {
             Authorization: `Bearer ${getAdminToken()}`,
@@ -70,7 +70,7 @@ function AdminCertifications() {
   const fetchStats = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/certifications/stats"
+        `${API_BASE_URL}/api/certifications/stats`
       );
 
       const data = await response.json();

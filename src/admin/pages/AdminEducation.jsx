@@ -58,7 +58,7 @@ function AdminEducation() {
   const fetchEducation = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/education/admin/all",
+        `${API_BASE_URL}/api/education/admin/all`,
         {
           headers: {
             Authorization: `Bearer ${getAdminToken()}`,
@@ -81,7 +81,7 @@ function AdminEducation() {
   const fetchHighlights = async () => {
     try {
       const response = await fetch(
-        "${API_BASE_URL}/api/education/highlights"
+        `${API_BASE_URL}/api/education/highlights`
       );
 
       const data = await response.json();

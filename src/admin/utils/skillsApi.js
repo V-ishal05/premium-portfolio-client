@@ -1,7 +1,7 @@
 import { getAdminToken } from "./adminAuth";
 
 const BASE_URL =
-  "${API_BASE_URL}/api/skills";
+  `${API_BASE_URL}/api/skills`;
 
 // =========================
 // PUBLIC SKILLS

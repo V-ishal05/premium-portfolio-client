@@ -6,7 +6,7 @@ import "../styles/AdminDashboard.css";
 import "../styles/AdminResumeManager.css";
 import AdminSidebar from "../components/AdminSidebar";
 import { getAdminToken } from "../utils/adminAuth";
-
+import API_BASE_URL from "../../config/api";
 function AdminResumeManager() {
   const [resume, setResume] =
     useState(null);
@@ -18,7 +18,7 @@ function AdminResumeManager() {
     useState(false);
 
   const API =
-    "${API_BASE_URL}/api/resume";
+    `${API_BASE_URL}/api/resume`;
 
   const fetchResume = async () => {
     try {
