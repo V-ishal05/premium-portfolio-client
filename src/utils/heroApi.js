@@ -1,7 +1,7 @@
 export const fetchHeroContent = async () => {
   try {
     const response = await fetch(
-      "http://${API_BASE_URL}/api/hero"
+      "${API_BASE_URL}/api/hero"
     );
 
     const data = await response.json();

@@ -2,7 +2,7 @@ import { getAdminToken }
 from "./adminAuth";
 
 const API =
-  "http://${API_BASE_URL}/api/admin/settings";
+  "${API_BASE_URL}/api/admin/settings";
 
 export const getProfile =
   async () => {

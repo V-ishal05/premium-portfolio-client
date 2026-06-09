@@ -3,7 +3,7 @@ export const fetchSkillsContent =
     try {
       const response =
         await fetch(
-          "http://${API_BASE_URL}/api/skills"
+          "${API_BASE_URL}/api/skills"
         );
 
       const data =

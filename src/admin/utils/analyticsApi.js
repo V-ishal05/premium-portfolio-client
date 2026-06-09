@@ -1,7 +1,7 @@
 import { getAdminToken } from "./adminAuth";
 
 const API_URL =
-  "http://${API_BASE_URL}/api/analytics";
+  "${API_BASE_URL}/api/analytics";
 
 export const getDashboardAnalytics =
   async () => {

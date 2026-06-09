@@ -50,7 +50,7 @@ function AdminExperience() {
       try {
         const response =
           await fetch(
-            "http://${API_BASE_URL}/api/admin/experience",
+            "${API_BASE_URL}/api/admin/experience",
             {
               headers: {
                 Authorization: `Bearer ${getAdminToken()}`,
@@ -82,7 +82,7 @@ function AdminExperience() {
       try {
         const response =
           await fetch(
-            `http://${API_BASE_URL}/api/admin/experience/${id}`,
+            `${API_BASE_URL}/api/admin/experience/${id}`,
             {
               method: "DELETE",
               headers: {

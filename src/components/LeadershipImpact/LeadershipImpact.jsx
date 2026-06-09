@@ -30,7 +30,7 @@ function LeadershipImpact() {
                 try {
                     const response =
                         await fetch(
-                            'http://${API_BASE_URL}/api/leadership'
+                            '${API_BASE_URL}/api/leadership'
                         );
 
                     const data =

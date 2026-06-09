@@ -18,7 +18,7 @@ function AdminResumeManager() {
     useState(false);
 
   const API =
-    "http://${API_BASE_URL}/api/resume";
+    "${API_BASE_URL}/api/resume";
 
   const fetchResume = async () => {
     try {

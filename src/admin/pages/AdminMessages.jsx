@@ -35,7 +35,7 @@ function AdminMessages() {
   const fetchMessages = async () => {
     try {
       const response = await fetch(
-        "http://${API_BASE_URL}/api/v1/admin/messages",
+        "${API_BASE_URL}/api/v1/admin/messages",
         {
           headers: {
             Authorization: `Bearer ${getAdminToken()}`,
@@ -61,7 +61,7 @@ function AdminMessages() {
   ) => {
     try {
       await fetch(
-        `http://${API_BASE_URL}/api/v1/admin/messages/${id}/read`,
+        `${API_BASE_URL}/api/v1/admin/messages/${id}/read`,
         {
           method: "PATCH",
           headers: {
@@ -84,7 +84,7 @@ function AdminMessages() {
   const archiveMessage = async (id) => {
     try {
       await fetch(
-        `http://${API_BASE_URL}/api/v1/admin/messages/${id}/archive`,
+        `${API_BASE_URL}/api/v1/admin/messages/${id}/archive`,
         {
           method: "PATCH",
           headers: {
@@ -104,7 +104,7 @@ function AdminMessages() {
   const deleteMessage = async (id) => {
     try {
       await fetch(
-        `http://${API_BASE_URL}/api/v1/admin/messages/${id}`,
+        `${API_BASE_URL}/api/v1/admin/messages/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -127,7 +127,7 @@ function AdminMessages() {
 
     try {
       await fetch(
-        `http://${API_BASE_URL}/api/v1/admin/messages/${selectedMessage._id}/notes`,
+        `${API_BASE_URL}/api/v1/admin/messages/${selectedMessage._id}/notes`,
         {
           method: "PATCH",
           headers: {

@@ -42,7 +42,7 @@ function AIRecruiterAssistant() {
     setTimeout(async () => {
   try {
     const response = await fetch(
-      "http://${API_BASE_URL}/api/ai/chat",
+      "${API_BASE_URL}/api/ai/chat",
       {
         method: "POST",
         headers: {

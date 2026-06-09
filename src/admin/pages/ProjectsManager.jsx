@@ -28,7 +28,7 @@ function ProjectsManager() {
   });
 
   const API =
-    "http://${API_BASE_URL}/api/admin/projects";
+    "${API_BASE_URL}/api/admin/projects";
 
   const fetchProjects = async () => {
     try {

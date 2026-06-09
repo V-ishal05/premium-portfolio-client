@@ -1,5 +1,5 @@
 const BASE_URL =
-  "http://${API_BASE_URL}/api/social-links";
+  "${API_BASE_URL}/api/social-links";
 
 export const getSocialLinks =
   async () => {

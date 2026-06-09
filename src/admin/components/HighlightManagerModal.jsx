@@ -28,8 +28,8 @@ function HighlightManagerModal({
   const saveHighlight = async () => {
     try {
       const url = editingId
-        ? `http://${API_BASE_URL}/api/education/admin/highlights/${editingId}`
-        : "http://${API_BASE_URL}/api/education/admin/highlights";
+        ? `${API_BASE_URL}/api/education/admin/highlights/${editingId}`
+        : "${API_BASE_URL}/api/education/admin/highlights";
 
       const method = editingId
         ? "PUT"
@@ -69,7 +69,7 @@ function HighlightManagerModal({
   const deleteHighlight = async (id) => {
     try {
       await fetch(
-        `http://${API_BASE_URL}/api/education/admin/highlights/${id}`,
+        `${API_BASE_URL}/api/education/admin/highlights/${id}`,
         {
           method: "DELETE",
           headers: {

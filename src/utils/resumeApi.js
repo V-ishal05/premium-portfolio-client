@@ -1,7 +1,7 @@
 export const fetchResumeLink = async () => {
   try {
     const res = await fetch(
-      "http://${API_BASE_URL}/api/resume"
+      "${API_BASE_URL}/api/resume"
     );
 
     const data = await res.json();

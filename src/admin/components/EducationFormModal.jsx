@@ -75,8 +75,8 @@ function EducationFormModal({
 
 
       const url = editingEducation
-        ? `http://${API_BASE_URL}/api/education/admin/${editingEducation._id}`
-        : "http://${API_BASE_URL}/api/education/admin/create";
+        ? `${API_BASE_URL}/api/education/admin/${editingEducation._id}`
+        : "${API_BASE_URL}/api/education/admin/create";
 
       const method = editingEducation
         ? "PUT"
