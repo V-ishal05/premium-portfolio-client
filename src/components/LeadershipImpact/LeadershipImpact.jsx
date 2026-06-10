@@ -7,7 +7,7 @@ import {
     FaTimes,
     FaExternalLinkAlt,
 } from 'react-icons/fa';
-
+import API_BASE_URL from "../../config/api";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 

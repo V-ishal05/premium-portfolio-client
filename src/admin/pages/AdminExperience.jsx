@@ -9,7 +9,7 @@ import "../styles/AdminExperience.css";
 
 import AdminSidebar from "../components/AdminSidebar";
 import ExperienceFormModal from "../components/ExperienceFormModal";
-
+import API_BASE_URL from "../../config/api";
 import { getAdminToken } from "../utils/adminAuth";
 
 function AdminExperience() {

@@ -3,7 +3,7 @@ import "../styles/ProjectsManager.css";
 import "../styles/AdminDashboard.css";
 import { getAdminToken } from "../utils/adminAuth";
 import AdminSidebar from "../components/AdminSidebar";
-
+import API_BASE_URL from "../../config/api";
 function ProjectsManager() {
   const [projects, setProjects] = useState([]);
   const [showModal, setShowModal] =

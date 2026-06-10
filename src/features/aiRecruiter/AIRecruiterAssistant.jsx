@@ -7,7 +7,7 @@ import {
   FaMicrochip,
   FaMicrophone,
 } from "react-icons/fa";
-
+import API_BASE_URL from "../../config/api";
 import "./AIRecruiterAssistant.css";
 import ChatMessage from "./ChatMessage";
 import TypingIndicator from "./TypingIndicator";

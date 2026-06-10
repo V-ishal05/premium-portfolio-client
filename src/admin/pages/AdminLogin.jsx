@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/AdminLogin.css";
 import { saveAdminToken } from "../utils/adminAuth";
-
+import API_BASE_URL from "../../config/api";
 function AdminLogin() {
   const navigate = useNavigate();
 

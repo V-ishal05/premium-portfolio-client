@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import "../styles/AdminDashboard.css";
 import { getAdminToken } from "../utils/adminAuth";
 import AdminSidebar from "../components/AdminSidebar";
-
+import API_BASE_URL from "../../config/api";
 function AdminMessages() {
 
   const [messages, setMessages] = useState([]);

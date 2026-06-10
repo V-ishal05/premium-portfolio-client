@@ -1,3 +1,4 @@
+import API_BASE_URL from "../config/api";
 export const fetchSkillsContent =
   async () => {
     try {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/EducationFormModal.css";
 import { getAdminToken } from "../utils/adminAuth";
-
+import API_BASE_URL from "../../config/api";
 function EducationFormModal({
   editingEducation,
   onClose,

@@ -8,7 +8,7 @@ import "../styles/AdminLeadership.css";
 
 import AdminSidebar from "../components/AdminSidebar";
 import LeadershipFormModal from "../components/LeadershipFormModal";
-
+import API_BASE_URL from "../../config/api";
 import { getAdminToken } from "../utils/adminAuth";
 
 function AdminLeadership() {

@@ -9,7 +9,7 @@ import "../styles/AdminEducation.css";
 import AdminSidebar from "../components/AdminSidebar";
 
 import { getAdminToken } from "../utils/adminAuth";
-
+import API_BASE_URL from "../../config/api";
 import EducationFormModal from "../components/EducationFormModal";
 import HighlightManagerModal from "../components/HighlightManagerModal";
 

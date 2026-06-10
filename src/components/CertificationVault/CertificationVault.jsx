@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   FaExternalLinkAlt,
 } from "react-icons/fa";
-
+import API_BASE_URL from "../../config/api";
 function CertificationVault() {
   const [activeFilter, setActiveFilter] =
     useState("All");

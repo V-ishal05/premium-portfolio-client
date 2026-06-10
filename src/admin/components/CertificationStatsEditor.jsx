@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/CertificationStatsEditor.css";
 import { getAdminToken } from "../utils/adminAuth";
-
+import API_BASE_URL from "../../config/api";
 function CertificationStatsEditor({
   stats,
   onClose,

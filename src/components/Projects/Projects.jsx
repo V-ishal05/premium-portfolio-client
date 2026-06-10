@@ -6,7 +6,7 @@ import {
     FaRocket,
     FaGithub,
 } from 'react-icons/fa';
-
+import API_BASE_URL from "../../config/api";
 function Projects() {
     const [activeFilter, setActiveFilter] = useState('All');
     const [selectedProject, setSelectedProject] = useState(null);

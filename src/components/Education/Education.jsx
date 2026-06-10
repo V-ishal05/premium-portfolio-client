@@ -7,7 +7,7 @@ import {
     FaAward,
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-
+import API_BASE_URL from "../../config/api";
 function Education() {
     const [education, setEducation] =
         useState([]);

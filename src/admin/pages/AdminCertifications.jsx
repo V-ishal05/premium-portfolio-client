@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import "../styles/AdminCertifications.css";
 import "../styles/AdminDashboard.css";
 import AdminSidebar from "../components/AdminSidebar";
-
+import API_BASE_URL from "../../config/api";
 import { getAdminToken } from "../utils/adminAuth";
 
 import CertificationFormModal from "../components/CertificationFormModal";

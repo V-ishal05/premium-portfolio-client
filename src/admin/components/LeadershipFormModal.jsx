@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/LeadershipFormModal.css";
 import { getAdminToken } from "../utils/adminAuth";
-
+import API_BASE_URL from "../../config/api";
 function LeadershipFormModal({
   leadership,
   onClose,

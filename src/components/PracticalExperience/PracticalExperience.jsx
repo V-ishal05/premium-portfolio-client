@@ -2,7 +2,7 @@ import './PracticalExperience.css';
 import { motion } from 'framer-motion';
 import { FaDownload } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-
+import API_BASE_URL from "../../config/api";
 function PracticalExperience() {
   const [experiences, setExperiences] =
     useState([]);
