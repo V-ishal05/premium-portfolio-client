@@ -16,7 +16,7 @@ function PracticalExperience() {
   const fetchExperiences = async () => {
     try {
       const response = await fetch(
-        '`${API_BASE_URL}/api/experience'
+        `${API_BASE_URL}/api/experience`
       );
 
       const data = await response.json();
